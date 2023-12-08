@@ -1,0 +1,33 @@
+{
+  "name": "formdataassigner",
+  "author": "Rejown Ahmed Zisan",
+  "description": "This is a recursive function which generates a formData object from nested values",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/index.js",
+    "build": "vite build"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "form-data": "^4.0.0",
+    "vite": "^5.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RejownAhmed/Js-form-data-assigner.git"
+  },
+  "keywords": [
+    "javascript",
+    "formdata",
+    "formdataassigner",
+    "dataassigner",
+    "formassigner"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RejownAhmed/Js-form-data-assigner/issues"
+  },
+  "homepage": "https://github.com/RejownAhmed/Js-form-data-assigner#readme"
+}
