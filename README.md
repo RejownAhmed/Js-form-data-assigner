@@ -16,7 +16,9 @@ Install the dependencies: ``npm i`` or ``yarn``
 
 Check the test/index.js file for test formData object which will be used to be converted.
 
-Now Simply Run this command: ``npm run test`` or ``yarn test`` 
+Now Simply Run this command: 
+```npm run test``` or 
+```yarn test```
 
 This command will run the index file and show the output
 
