@@ -16,11 +16,15 @@ Install the dependencies: ``npm i`` or ``yarn``
 
 Check the test/index.js file for test formData object which will be used to be converted.
 
-Simply Run this command: ``npm run test`` or ``yarn test`` This command will run the index file and show the output
-Output: On nodejs 18+
+Now Simply Run this command: ``npm run test`` or ``yarn test`` 
+This command will run the index file and show the output
 
 #### Note:
-To run on lower nodejs version environments, please import FormData inside src/formDataAssigner.js 
+To run on lower nodejs version environments, 
+please import FormData inside src/formDataAssigner.js 
+Otherwise it will throw an error
+
+### Output: On nodejs 18+
 ```javascript
 FormData {
   [Symbol(state)]: [
