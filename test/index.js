@@ -5,6 +5,18 @@
 
 import formDataAssigner from "../src/formDataAssigner.js";
 
+// Create a PNG image with some sample data
+const pngData = new Uint8Array([
+  137, 80, 78, 71, 13, 10, 26, 10, // PNG signature
+  // Add more PNG data here...
+]);
+
+// Create a Blob with the PNG data
+const pngBlob = new Blob([pngData], { type: "image/png" });
+
+// Create a File with the Blob
+const pngFile = new File([pngBlob], "foo.png", { type: "image/png" });
+
 const nestedFormData = {
   title: 'This is form Data',
   formData: [
@@ -12,7 +24,8 @@ const nestedFormData = {
       title : 'First section',
       fields: [
         {
-          title: 'first section\'s first field'
+          title: 'first section\'s first field',
+          image: pngFile
         },
         {
           title: 'first section\'s second field',

@@ -16,13 +16,18 @@ const formDataAssigner = (dataObject, formData = new FormData(), parentKey) => {
     throw new Error('Arrays cannot be dealt with this function');
   }
   
-  //Destructure and get the key value pairs
+  // Destructure and get the key value pairs
   for (const key in dataObject) {
-    //Object Field
+    // Object Field
     const field = dataObject[key];
     //Generate the key
     let appendKey = parentKey ? `${parentKey}[${key}]` : key;
-    if (typeof field === 'object' && !Array.isArray(field)){
+    
+    //If its a file
+    if (field instanceof File) {
+      formData.append(appendKey, field);
+
+    }else if (typeof field === 'object' && !Array.isArray(field)){
       //If obj but not arr
       formDataAssigner(dataObject[key], formData, appendKey);
       
