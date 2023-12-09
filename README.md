@@ -26,9 +26,11 @@ This command will run the index file and show the output
 To run the test on lower nodejs environments, 
 uncomment this line:  
 ```javascript
-// import FormData from 'form-data'; 
+// src/formDataAssigner.js
+
+12: // import FormData from 'form-data'; 
 ```
-inside src/formDataAssigner.js. Otherwise it will throw an error
+inside . Otherwise it will throw an error
 
 ### Output: On nodejs 18+
 ```javascript
