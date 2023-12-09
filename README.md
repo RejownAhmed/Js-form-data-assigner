@@ -6,10 +6,21 @@ Go to the src folder and download the formDataAssigner.js file.
 Voila! Now use it in your production exactly how you like. :)
 
 ### Testing
+At first clone this repo with this command:
+
+```git
+  git clone https://github.com/RejownAhmed/Js-form-data-assigner.git
+```
+
+Install the dependencies: ``npm i`` or ``yarn``
+
 Check the test/index.js file for test formData object which will be used to be converted.
 
 Simply Run this command: ``npm run test`` or ``yarn test`` This command will run the index file and show the output
 Output: On nodejs 18+
+
+#### Note:
+To run on lower nodejs version environments, please import FormData inside src/formDataAssigner.js 
 ```javascript
 FormData {
   [Symbol(state)]: [
