@@ -1,11 +1,11 @@
 # Js-form-data-assigner
 This is a recursive function which generates a formData object from nested values. When our formData is a huge nested object it becomes really hard to append to a FormData Object. Also, when handling dynamic form objects it's a pain in the ***. Use this simple Assigner which takes care of all these problems for you and returns a nice and formatted formData object with all appended values
  
-## Instructions
+## Usage Instructions
 Go to the src folder and download the formDataAssigner.js file.
 Voila! Now use it in your production exactly how you like. :)
 
-### Testing
+## Testing
 At first clone this repo with this command:
 
 ```git
@@ -14,17 +14,15 @@ At first clone this repo with this command:
 
 **Install the dependencies:** ``npm i`` or ``yarn``
 
-Check the test/index.js file for test formData object which will be used to be converted.
+Check the ``test/index.js`` file for the test.
 
-Now Simply Run this **command:** 
-```npm run test``` or 
-```yarn test```
-
-This command will run the index file and show the output
+Simply Run this command: 
+**```npm run test```** or 
+**```yarn test```**
 
 #### Note:
 To run the test on lower nodejs environments, 
-make sure your uncomment this line inside ``src/formDataAssigner.js`` file.
+make sure to uncomment this line inside ``src/formDataAssigner.js`` file.
 
 ```javascript
 // import FormData from 'form-data'; 
