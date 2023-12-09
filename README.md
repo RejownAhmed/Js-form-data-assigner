@@ -24,13 +24,11 @@ This command will run the index file and show the output
 
 #### Note:
 To run the test on lower nodejs environments, 
-uncomment this line:  
-```javascript
-// src/formDataAssigner.js
+make sure your uncomment this line inside ``src/formDataAssigner.js`` file.
 
-12: // import FormData from 'form-data'; 
+```javascript
+// import FormData from 'form-data'; 
 ```
-inside . Otherwise it will throw an error
 
 ### Output: On nodejs 18+
 ```javascript
