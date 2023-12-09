@@ -6,8 +6,9 @@ Go to the src folder and download the formDataAssigner.js file.
 Voila! Now use it in your production exactly how you like. :)
 
 ### Testing
-Run this command: ``npm run test`` or ``yarn test``
+Check the test/index.js file for test formData object which will be used to be converted.
 
+Simply Run this command: ``npm run test`` or ``yarn test`` This command will run the index file and show the output
 Output: On nodejs 18+
 ```javascript
 FormData {
