@@ -23,9 +23,12 @@ Now Simply Run this **command:**
 This command will run the index file and show the output
 
 #### Note:
-To run on lower nodejs version environments, 
-please import FormData inside src/formDataAssigner.js 
-Otherwise it will throw an error
+To run the test on lower nodejs environments, 
+uncomment this line:  
+```javascript
+// import FormData from 'form-data'; 
+```
+inside src/formDataAssigner.js. Otherwise it will throw an error
 
 ### Output: On nodejs 18+
 ```javascript
