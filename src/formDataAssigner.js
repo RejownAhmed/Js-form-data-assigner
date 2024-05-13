@@ -53,7 +53,14 @@ const formDataAssigner = (dataObject, formData = new FormData(), parentKey) => {
       //If arr
       field.forEach((newObject, index) => {
         appendKey = parentKey ? `${parentKey}[${key}][${index}]` : `${key}[${index}]`;
-        formDataAssigner(newObject, formData, appendKey);
+        // If object
+        if(typeof newObject === 'object') {
+          formDataAssigner(newObject, formData, appendKey);
+
+        } else {
+          // If plain array
+          formData.append(appendKey, newObject);
+        }
 
       });
 
